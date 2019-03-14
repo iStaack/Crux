@@ -30,6 +30,7 @@
 
         <main>
 
+
         <div id="titulo">
                         <h1>Editoriales</h1>
                     </div>
@@ -39,14 +40,28 @@
                     </div>
                     <a href="registro_editoriales.html"><button type="button">Agregar</button></a>
 
-                    <div class="grid-container">
-            <!--Head--><div class="grid-item">Codigo</div>
+                    <table id="tbl_editoriales">
+                                <thead>
+                                    <tr>
+                                        <th class="codigo">Código</th>
+                                        <th class="nombre">Nombre</th>
+                                        <th class="pais">País</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                    </table>
+
+                    <!--<div class="grid-container">
+                         <div class="grid-item">Codigo</div>
                         <div class="grid-item">Nombre</div>
                         <div class="grid-item">País</div>
                         <div class="grid-item opciones">
 
                         </div>
-                    <!--1--><div class="grid-item" id="codigo1"><p>1</p></div>
+                            <div class="grid-item" id="codigo1"><p>1</p></div>
                             <div class="grid-item" id="nombre1"><p>Watchtower Bible and Track Society of New York, inc</p></div>
                             <div class="grid-item" id="pais1"><p>EU</p></div>
                             <div class="grid-item opciones" id="opciones1">
@@ -57,7 +72,7 @@
                             </div>
 
                             </div>
-                        <!--2--><div class="grid-item" id="codigo2"><p>2</p></div>
+                                <div class="grid-item" id="codigo2"><p>2</p></div>
                                 <div class="grid-item" id="nombre2"><p>Ediciones Salamandra</div>
                                 <div class="grid-item" id="pais2"><p>ES</p></div>
                                 <div class="grid-item opciones" id="opciones2">
@@ -67,7 +82,7 @@
                                     <i class="fas fa-trash-alt"></i>
                                     </div>
                                 </div>
-                            <!--3--><div class="grid-item" id="codigo3"><p>3</p></div>
+                                    <div class="grid-item" id="codigo3"><p>3</p></div>
                                     <div class="grid-item" id="nombre3"><p>Apress, inc</p></div>
                                     <div class="grid-item" id="pais3"><p>EU</p></div>
                                     <div class="grid-item opciones" id="opciones3">
@@ -77,7 +92,7 @@
                                         <i class="fas fa-trash-alt"></i>
                                         </div>
                                     </div>
-                                <!--4--><div class="grid-item" id="codigo4"><p>4</p></div>
+                                        <div class="grid-item" id="codigo4"><p>4</p></div>
                                         <div class="grid-item" id="nombre4"><p>Pearson Educación</p></div>
                                         <div class="grid-item" id="pais4"><p>ES</p></div>
                                         <div class="grid-item opciones" id="opciones4">
@@ -87,7 +102,7 @@
                                             <i class="fas fa-trash-alt"></i>
                                             </div>
                                         </div>
-                                    <!--5--><div class="grid-item" id="codigo5"><p>5</p></div>
+                                            <div class="grid-item" id="codigo5"><p>5</p></div>
                                             <div class="grid-item" id="nombre5"><p>Alianza Editorial</p>
                                             </div>
                                             <div class="grid-item" id="pais5"><p>ES</p></div>
@@ -98,7 +113,7 @@
                                                 <i class="fas fa-trash-alt"></i>
                                                 </div>
                                             </div>
-                                        <!--6--><div class="grid-item" id="codigo6"><p>6</p></div>
+                                                <div class="grid-item" id="codigo6"><p>6</p></div>
                                                 <div class="grid-item" id="nombre6"><p>Editorial Planeta</p></div>
                                                 <div class="grid-item" id="pais6"><p>ES</p></div>
                                                 <div class="grid-item opciones" id="opciones6">
@@ -108,7 +123,7 @@
                                                     <i class="fas fa-trash-alt"></i>
                                                     </div>
                                                 </div>
-                                                    <!--7--><div class="grid-item" id="codigo7"><p>7</p></div>
+                                                    <div class="grid-item" id="codigo7"><p>7</p></div>
                                                     <div class="grid-item" id="nombre7"><p>Austral</p></div>
                                                     <div class="grid-item" id="pais7"><p>ES</p></div>
                                                     <div class="grid-item opciones" id="opciones7">
@@ -118,7 +133,12 @@
                                                         <i class="fas fa-trash-alt"></i>
                                                         </div>
                                                     </div>
-                    </div>
+                    </div>-->
         </main>
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="js/servicio_editoriales.js"></script>
+        <script src="js/controller_listado_editoriales.js"></script>
     </body>
 </html>

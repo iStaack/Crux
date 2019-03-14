@@ -43,7 +43,7 @@ img{
 }
 
 .imagen:hover{
-    background-color: #6F1E51;
+    background-color: #B53471;
 }
 
 .p_autor, .p_precio, h2{
@@ -93,6 +93,8 @@ h2{
 }
 
 #btn_reservar:hover{
-    border-width: 4px;
+    border-width: 2px;
     background-color: #0652DD;
+    box-sizing: border-box;
+    transition: all 500ms ease;
 }

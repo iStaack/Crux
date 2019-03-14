@@ -1,7 +1,26 @@
 'use strict';
 
-let listarLibros = () =>{
+let getListaLibros = () =>{
+    let lista = [];
+    let request = $.ajax({
+        url: "http://localhost:4000/api/listar_libros",
+        method: "GET",
+        data: {},
+        contentType : 'application/x-www-form-urlencoded; charset=UTF-8',
+        dataType: "json",
+        async: false
+    });
 
+    request.done(function( res ) {
+        lista = res.libros;
+    });
+
+
+    request.fail(function( jqXHR, textStatus ) {
+        console.log(jqXHR + "<b>" + textStatus);
+    });
+
+    return lista;
 };
 
 let registrarLibro = (pisbn, ptitulo, pcategoria, peditorial, pautor, pprecio, pportada) =>{

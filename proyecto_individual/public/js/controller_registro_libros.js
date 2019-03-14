@@ -6,7 +6,10 @@ const slt_categoria = document.querySelector("select#slt_categoria");
 const slt_editorial = document.querySelector("select#slt_editorial");
 const txt_autor = document.querySelector("input#txt_autor");
 const nbr_precio = document.querySelector("input#nbr_precio");
+// import cloudinary from “cloudinary-core”;    // If your code is for ES6 or higher
+// let cloudinary = require("cloudinary-core"); // If your code is for ES5
 
+const imagen_portada = document.querySelector('#imagen_portada');
 
 const btn_registrar = document.querySelector("button#btn_registrar");
 
@@ -83,9 +86,10 @@ let agregarLibro = () =>{
         editorial = slt_editorial.value;
         autor = txt_autor.value;
         precio = nbr_precio.value;
-        var portada = 'Portada no disponible';
+        let portada = 'Portada no disponible';
+        let imagen = imagen_portada.src;
 
-        registrarLibro(isbn, titulo, categoria, editorial, autor, precio, portada);
+        registrarLibro(isbn, titulo, categoria, editorial, autor, precio, imagen);
 
         setTimeout("location.href='libros.html'", 4000);
 

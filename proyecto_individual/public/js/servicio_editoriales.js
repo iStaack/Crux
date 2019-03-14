@@ -1,7 +1,27 @@
 'use strict';
 
-let listar_editoriales = () =>{
+let getLista_editoriales = () =>{
+    let lista = [];
+    let request = $.ajax(
+        {
+            url: "http://localhost:4000/api/listar_editoriales",
+            method: "GET",
+            data: {},
+            contentType:  'application/x-www-form-urlencoded; charset=UTF-8',
+            dataType: "json",
+            async: false
+        }
+    );
 
+    request.done(function (res) {
+        lista = res.editoriales;
+    });
+
+    request.fail(function (jqXHR, textStatus) {
+
+    });
+
+    return lista;
 };
 
 let registrarEditorial = (pcodigo, pnombre, ppais) =>{

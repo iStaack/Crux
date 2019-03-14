@@ -28,20 +28,56 @@
     color: #bdc3c7;
 }
 
+table{
+    width: 1325px;
+    border: 1px solid white;
+    background: #6F1E51;
+    padding-top: 20px;
+    margin-top: 125px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-collapse: collapse;
+
+}
+
+th, td{
+    width: 25%;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #000;
+    font-size: 18px;
+}
+
+th{
+    font-weight: bolder;
+    font-size: 20px;
+    color: #25CCF7;
+}
+
+td{
+    height: 40px;
+}
 .grid-item:hover{
     background-color: #B53471;
     color: white;
 }
 
+.grid-item:hover i, .grid-item:hover p{
+    color: #25CCF7;
+}
+
 i
 {
     margin-right: 5px;
-    color: black;
+    color: white;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
-i:hover{
+.grid-item i:hover{
     color: white;
 }
+
 
 div#buscar_editorial{
     display: inline-block;
@@ -73,7 +109,7 @@ label{
 button{
     /*background: #3498db;*/
     background:#1B1464;
-    padding: 10px;
+    padding: 10px 35px;
     width: 200px;
     height: 50px;
     /*margin: 0 auto;*/
@@ -83,19 +119,70 @@ button{
     margin-top: 0px;
     margin-right: 50px;
     float: right;
+    /*overflow: hidden;*/
 }
+
+/*button:before {*/
+    /*font-family: FontAwesome;*/
+    /*content:"\f07a";*/
+    /*position: absolute;*/
+    /*top: 11px;*/
+    /*left: -30px;*/
+    /*transition: all 200ms ease;*/
+/*}*/
+
+/*button:hover:before {*/
+    /*left: 7px;*/
+/*}*/
 
 button:hover{
-    border-width: 4px;
+    border: 2px solid white;
     background-color: #0652DD;
+    box-sizing: border-box;
+    transition: all 500ms ease;
 }
 
+/*.awesome_images{*/
+    /*position: relative;*/
+    /*transform: translateY(-50%);*/
+    /*top: 50%;*/
+/*}*/
+
 .awesome_images{
-    position: relative;
-    transform: translateY(-50%);
-    top: 50%;
+    display: inline-block;
+    vertical-align: middle;
 }
 img{
     width: 100px;
     height: 100px;
+}
+.nombre{
+    width: 55%;
+}
+.pais{
+    width: 10%;
+}
+
+.codigo:hover{
+    background-color: #1B1464;
+    color: #25CCF7;
+}
+
+.nombre:hover{
+    background-color: #1B1464;
+    color: #25CCF7;
+}
+
+.pais:hover{
+    background-color: #1B1464;
+    color: #25CCF7;
+}
+
+.funcione_por_favor:hover{
+    background-color: #1B1464;
+    color: #25CCF7;
+}
+
+.funcione_por_favor:hover i:hover{
+    color: #25CCF7;
 }

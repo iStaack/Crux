@@ -13,6 +13,10 @@
     /*float: right;*/
 }
 
+#columna_izquierda, #columna_derecha{
+    margin-top: 100px;
+}
+
 
 section#columna_izquierda form#frm_registro_sucursales section label{
     font-size: 18px;
@@ -63,18 +67,7 @@ section#columna_izquierda form#frm_registro_sucursales section select{
     width: 205px;
 }
 
-main section button{
-    display: block;
-    background:#1B1464;
-    padding: 10px;
-    width: 225px;
-    height: 70px;
-    margin: 0 auto;
-    font-size: 16px;
-    color: white;
-    border-radius: 5%;
-    margin-top: 10px;
-}
+
 
 #btn_registrar:hover, #div_subir_ubicacion:hover{
     /*color: #7ed6df;*/
@@ -87,19 +80,35 @@ h1{
     margin-top: 20px;
     margin-bottom: 20px;
 }
-div#div_subir_ubicacion{
-    background-image: url("../img/imagen_ubicacion2.jpg");
-    width: 100%;
-    height: 100%;
+/*div#div_subir_ubicacion{*/
+    /*!*background-image: url("../img/imagen_ubicacion2.jpg");*!*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*background-size: cover;*/
+    /*background-position: center;*/
+    /*display: inline-block;*/
+/*}*/
+
+#div_subir_ubicacion{
     background-size: cover;
     background-position: center;
     display: inline-block;
+    width: 250px;
+    height: 250px;
+    /*position: relative;*/
+    /*top: 50px;*/
+    border: 2px solid #6F1E51;
 }
+
+
 img{
-    position: relative;
-    top: 50px;
+    /*position: relative;*/
+    /*top: 50px;*/
+    width: 100%;
+    height: 100%;
 }
-article section#columna_derecha div#div_subir_ubicacion{
+article section#columna_derecha #div_subir_ubicacion{
+
     display: inline-block;
     width: 250px;
     height: 250px;
@@ -112,3 +121,16 @@ article section#columna_derecha div#div_subir_ubicacion{
     /*position: relative;*/
     /*top: 35px;*/
 /*}*/
+main section button{
+    display: block;
+    background:#1B1464;
+    padding: 10px;
+    width: 225px;
+    height: 70px;
+    margin: 0 auto;
+    font-size: 16px;
+    color: white;
+    border-radius: 5%;
+    margin-top: 10px;
+
+}

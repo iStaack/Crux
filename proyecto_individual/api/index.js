@@ -16,7 +16,7 @@ const express = require('express'),
 let db = mongoose.connection,
     dburl = 'mongodb://admin:aBc123@proyecto-shard-00-00-lefp0.mongodb.net:27017,' +
         'proyecto-shard-00-01-lefp0.mongodb.net:27017,' +
-        'proyecto-shard-00-02-lefp0.mongodb.net:27017/test?ssl=true&replicaSet=proyecto-shard' +
+        'proyecto-shard-00-02-lefp0.mongodb.net:27017/crux?ssl=true&replicaSet=proyecto-shard' +
         '-0&authSource=admin&retryWrites=true',
 
     // dburl = 'mongodb://pabs:1biblioteca9@ds163680.mlab.com:63680/bd_biblioteca',

@@ -8,7 +8,7 @@ let schema_sucursal = new mongoose.Schema(
         nombre : {type : String, required : true},
         telefono : {type : String, required : true},
         direccion_exacta : {type : String, required : true},
-        ubicacion : {type: String,  required : false}
+        ubicacion : {type: String,  required : true}
     }
 );
 

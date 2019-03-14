@@ -1,3 +1,6 @@
+html{
+    font-family: Verdana, sans-serif
+}
 nav{
     color: #3498db;
     background-color: #6F1E51;
@@ -10,7 +13,8 @@ nav{
 
 nav a{
     /*color: #0652DD;*/
-    color: #1B1464;
+    /*color: #1B1464;*/
+    color: #25CCF7;
     padding: 25px;
     /*padding-top: 25px;*/
     /*padding-bottom: 25px;*/
@@ -22,11 +26,15 @@ nav a{
     display: inline-block;
 }
 
-header#header_principal nav a:hover {
+a:hover {
     /*color: #7ed6df;*/
-    font-style: italic;
-    background: #bdc3c7;
+    /*font-style: italic;*/
+    background: #d2dae2;
     color: #6F1E51;
+    border-radius: 5px;
+    position: relative;
+    box-sizing: border-box;
+    transition: all 500ms ease;
     /*font-size: 20px;
     padding-top: 10px;
     padding-bottom: 10px;*/

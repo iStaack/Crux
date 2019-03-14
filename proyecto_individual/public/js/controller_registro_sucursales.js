@@ -4,6 +4,7 @@ const txt_codigo = document.querySelector('#txt_codigo');
 const txt_nombre = document.querySelector('#txt_nombre');
 const txt_telefono = document.querySelector('#txt_telefono');
 const txt_direccion = document.querySelector('#txt_direccion');
+const imagen_ubicacion = document.querySelector('#imagen_ubicacion');
 
 const btn_registrar = document.querySelector('#btn_registrar');
 

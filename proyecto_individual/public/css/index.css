@@ -1,0 +1,32 @@
+#link_iniciar_sesion{
+    font-size: 20px;
+    background-color: #ffffff;
+    color: #1B1464;
+    border-radius: 3%;
+    font-style: normal;
+}
+header nav #link_iniciar_sesion:hover{
+    background: #1B1464;
+    border-radius: 5px;
+    position: relative;
+    box-sizing: border-box;
+    transition: all 500ms ease;
+    color: #25CCF7;
+    /*font-style: normal;*/
+    /*padding: 20px;*/
+    /*font-size: 25px;*/
+    /*background-color: #1B1464;*/
+    /*color: #25CCF7;*/
+    /*border: 2px white solid;*/
+    /*font-weight: bold;*/
+}
+
+nav{
+    height: 70px;
+}
+
+label{
+    color: #9AECDB;
+    margin-right: 5px;
+
+}

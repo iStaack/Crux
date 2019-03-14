@@ -1,7 +1,29 @@
 'use strict';
 
 let listarSucursales = () =>{
+    let lista_sucursales = [];
 
+    let request = $.ajax(
+        {
+            url: "http://localhost:4000/api/listar_sucursales",
+            method: "GET",
+            data: {},
+            contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
+            dataType: 'json',
+            async: false
+        }
+
+    );
+
+    request.done(function (res) {
+        lista_sucursales = res.sucursales;
+    });
+
+    request.fail(function (jqXHR, textStatus) {
+
+    });
+
+    return lista_sucursales;
 };
 
 let registrarSucursal = (pcodigo, pnombre, ptelefono, pdireccion, pubicacion) =>{

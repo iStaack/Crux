@@ -10,7 +10,7 @@ let schema_libro = new mongoose.Schema(
         editorial : {type : String, required : true},
         autor : {type : String, required : true},
         precio : {type : Number, required : true},
-        portada : {type : String, required : false}
+        portada : {type : String, required : true}
     }
 );
 

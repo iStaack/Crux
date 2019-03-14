@@ -38,8 +38,36 @@
             </div>
             <a href="registro_libros.html"><button type="button">Agregar</button></a>
 
-            <div class="grid-container">
-    <!--Head--><div class="grid-item">Isbn</div>
+            <div class="grid-container" id="thead">
+                    <div class="grid-item">Isbn</div>
+                    <div class="grid-item">Titulo</div>
+                    <div class="grid-item">Categoría</div>
+                    <div class="grid-item">Editorial</div>
+                    <div class="grid-item">Autor</div>
+                    <div class="grid-item">Precio</div>
+                    <div class="grid-item">Portada</div>
+                    <div class="grid-item opciones"></div>
+            </div>
+            <div class="grid-container" id="tbody">
+
+                <div class="grid-item" id="isbn"><p></p></div>
+                <div class="grid-item" id="titulo"><p></p></div>
+                <div class="grid-item" id="categoria"><p></p></div>
+                <div class="grid-item" id="editorial"><p></p></div>
+                <div class="grid-item" id="autor"><p></p></div>
+                <div class="grid-item" id="precio"><p></p></div>
+                <figure class="grid-item" id="portada"><img src="img/nwt.jpeg" alt="Imagen NWT"></figure>
+                <div class="grid-item opciones" id="opciones1">
+                    <div class="awesome_images">
+                    <i class="far fa-eye"></i>
+                    <i class="fas fa-edit"></i>
+                    <i class="fas fa-trash-alt"></i>
+                    </div>
+                </div>
+
+            </div>
+            <!--<div class="grid-container">
+                <div class="grid-item">Isbn</div>
                 <div class="grid-item">Titulo</div>
                 <div class="grid-item">Categoría</div>
                 <div class="grid-item">Editorial</div>
@@ -49,7 +77,7 @@
                 <div class="grid-item opciones">
 
                 </div>
-            <!--1--><div class="grid-item" id="isbn1"><p>9788386930104</p></div>
+            <div class="grid-item" id="isbn1"><p>9788386930104</p></div>
                     <div class="grid-item" id="titulo1"><p>New World Translation of the Holy Scriptures</p></div>
                     <div class="grid-item" id="categoria1"><p>Enciclopedia / Manual</p></div>
                     <div class="grid-item" id="editorial1"><p>Watchtower Bible and Track Society of New York, inc</p></div>
@@ -64,7 +92,7 @@
                         </div>
 
                     </div>
-                <!--2--><div class="grid-item" id="isbn2"><p>9781408845660</p></div>
+                <div class="grid-item" id="isbn2"><p>9781408845660</p></div>
                         <div class="grid-item" id="titulo2"><p>Harry Potter y el prisionero de Azkaban</div>
                         <div class="grid-item" id="categoria2"><p>Ciencia ficción</div>
                         <div class="grid-item" id="editorial2"><p>Ediciones Salamandra</div>
@@ -78,7 +106,7 @@
                             <i class="fas fa-trash-alt"></i>
                             </div>
                         </div>
-                    <!--3--><div class="grid-item" id="isbn3"><p>9786074086539</p></div>
+                    <div class="grid-item" id="isbn3"><p>9786074086539</p></div>
                             <div class="grid-item" id="titulo3"><p>What Can the Bible Teach Us?</p></div>
                             <div class="grid-item" id="categoria3"><p>Investigación</p></div>
                             <div class="grid-item" id="editorial3"><p>La Torre del Vigía, A.R.</p></div>
@@ -92,7 +120,7 @@
                                 <i class="fas fa-trash-alt"></i>
                                 </div>
                             </div>
-                        <!--4--><div class="grid-item" id="isbn4"><p>9781430264613</p></div>
+                        <div class="grid-item" id="isbn4"><p>9781430264613</p></div>
                                 <div class="grid-item" id="titulo4"><p>Java FX 8: Introduction by Example</p></div>
                                 <div class="grid-item" id="categoria4"><p>Investigación</p></div>
                                 <div class="grid-item" id="editorial4"><p>Apress</p></div>
@@ -108,7 +136,7 @@
                                     <i class="fas fa-trash-alt"></i>
                                     </div>
                                 </div>
-                            <!--5--><div class="grid-item" id="isbn5"><p>9780133807806</p></div>
+                           <div class="grid-item" id="isbn5"><p>9780133807806</p></div>
                                     <div class="grid-item" id="titulo5"><p>Java cómo programar, décima edición - Deitel & Deitel</p>
                                     </div>
                                     <div class="grid-item" id="categoria5"><p>Investigación</p></div>
@@ -125,7 +153,7 @@
                                         <i class="fas fa-trash-alt"></i>
                                         </div>
                                     </div>
-                                <!--6--><div class="grid-item" id="isbn6"><p>9781408803011</p></div>
+                                <div class="grid-item" id="isbn6"><p>9781408803011</p></div>
                                         <div class="grid-item" id="titulo6"><p>Animales fantásticos y dónde encontrarlos</p></div>
                                         <div class="grid-item" id="categoria6"><p>Ciencia ficción</p></div>
                                         <div class="grid-item" id="editorial6"><p>Ediciones Salamandra</p></div>
@@ -141,7 +169,7 @@
                                             <i class="fas fa-trash-alt"></i>
                                             </div>
                                         </div>
-                                            <!--7--><div class="grid-item" id="isbn7"><p>9788469624708</p></div>
+                                            <div class="grid-item" id="isbn7"><p>9788469624708</p></div>
                                             <div class="grid-item" id="titulo7"><p>La metamorfosis</p></div>
                                             <div class="grid-item" id="categoria7"><p>Ficción / Realidad</p></div>
                                             <div class="grid-item" id="editorial7"><p>Alianza Editorial</p></div>
@@ -157,11 +185,13 @@
                                                 <i class="fas fa-trash-alt"></i>
                                                 </div>
                                             </div>
-
-                </div>
+                </div>-->
         </main>
 
-        <script src="js/controller_libros.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="js/servicio_libros.js"></script>
+        <script src="js/controller_listado_libros.js"></script>
     </body>
 
 
