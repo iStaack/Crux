@@ -50,7 +50,9 @@ let registrarSucursal = (pcodigo, pnombre, ptelefono, pdireccion, pubicacion) =>
                      title: 'Se registró con éxito la sucursal',
                      text: `La sucursal ${pnombre} cuyo código es ${pcodigo}`+
                          `, teléfono es ${ptelefono} y se encuentra en ${pdireccion} `+
-                         `se registró exitosamente.`
+                         `se registró exitosamente.`,
+                     showConfirmButton: false,
+                     timer: 1500
                  }
              );
          }

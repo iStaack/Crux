@@ -45,11 +45,13 @@ let registrarLibro = (pisbn, ptitulo, pcategoria, peditorial, pautor, pprecio, p
 
         swal.fire(
             {
-            type: 'success',
-            title: 'Se registró con éxito el libro',
-            text: `El isbn del libro "${ptitulo}" cuya categoría es ${pcategoria}`+
+                type: 'success',
+                title: 'Se registró con éxito el libro',
+                text: `El isbn del libro "${ptitulo}" cuya categoría es ${pcategoria}`+
                 ` y que pertenece a la editorial ${peditorial} es ${pisbn}, su ` +
-                ` autor es ${pautor} y tiene un valor de ${pprecio}`
+                ` autor es ${pautor} y tiene un valor de ${pprecio}`,
+                showConfirmButton: false,
+                timer: 1500
             }
         );
 

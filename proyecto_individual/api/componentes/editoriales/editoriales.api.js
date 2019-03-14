@@ -31,7 +31,7 @@ module.exports.registrar = (req, res) =>{
 };
 
 module.exports.listar_todos = (req, res) =>{
-    modelo_editorial.find().sort({nombre: 'asc'}).then(
+    modelo_editorial.find().sort({codigo: 'asc'}).then(
         function (editoriales) {
             if (editoriales.length > 0){
                 res.json(

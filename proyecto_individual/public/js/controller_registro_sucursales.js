@@ -63,7 +63,7 @@ let agregarSucursal = () =>{
 
         registrarSucursal(codigo, nombre, telefono, direccion, ubicacion);
 
-        setTimeout("location.href='sucursales.html'", 3000);
+        setTimeout("location.href='sucursales.html'", 1500);
 
 
     } else {

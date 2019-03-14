@@ -45,7 +45,9 @@ let registrarEditorial = (pcodigo, pnombre, ppais) =>{
                 type: 'success',
                 title: 'Se registró correctamente la editorial',
                 text: `La editorial ${pnombre} del país ${ppais} cuyo código es ${pcodigo}`+
-                    ` se registró correctamente.`
+                    ` se registró correctamente.`,
+                showConfirmButton: false,
+                timer: 1500
             }
         );
     });

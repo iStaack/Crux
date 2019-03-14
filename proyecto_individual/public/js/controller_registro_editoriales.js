@@ -49,7 +49,7 @@ let agregarEditorial = () =>{
 
         registrarEditorial(codigo, nombre, pais);
 
-        setTimeout("location.href='editoriales.html'", 3500);
+        setTimeout("location.href='editoriales.html'", 1500);
 
 
     } else {

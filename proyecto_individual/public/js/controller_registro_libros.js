@@ -91,7 +91,7 @@ let agregarLibro = () =>{
 
         registrarLibro(isbn, titulo, categoria, editorial, autor, precio, imagen);
 
-        setTimeout("location.href='libros.html'", 4000);
+        setTimeout("location.href='libros.html'", 1500);
 
 
     } else {
