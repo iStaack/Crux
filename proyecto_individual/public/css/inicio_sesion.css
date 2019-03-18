@@ -1,0 +1,68 @@
+main{
+    text-align: center;
+}
+
+h1{
+    margin-top: 30px;
+    margin-bottom: 90px;
+    font-size: 30px;
+}
+
+form{
+    margin-top: 150px;
+    text-align: center;
+    border: 2px #25CCF7 solid;
+    display: inline-block;
+    width: 800px;
+    height: 500px;
+}
+
+
+section label{
+    width: 270px;
+    margin-right: 20px;
+}
+
+section input{
+    width: 250px;
+    border:1px solid white;
+    outline-color:#6F1E51;
+    outline-style: solid;
+}
+
+section label, input{
+    text-align: left;
+    display: inline-block;
+    height: 20px;
+    font-size: 20px;
+}
+
+section{
+    margin-bottom: 60px;
+}
+
+button{
+    /*background: #3498db;*/
+    background:#1B1464;
+    padding: 10px;
+    width: 200px;
+    height: 50px;
+    /*margin: 0 auto;*/
+    font-size: 16px;
+    color: white;
+    border-radius: 5%;
+    margin-top: 50px;
+}
+
+button:hover {
+    background-color: #0652DD;
+    color: #d2dae2;
+    box-sizing: border-box;
+    transition: all 500ms ease;
+    border: 2px solid white;
+}
+
+
+.error{
+    border: 1px
+}
