@@ -1,3 +1,8 @@
+main{
+    text-align: center;
+    margin: 0 auto;
+}
+
 #link_iniciar_sesion{
     font-size: 20px;
     background-color: #ffffff;
@@ -29,4 +34,55 @@ label{
     color: #9AECDB;
     margin-right: 5px;
 
+}
+
+h1{
+    margin-top: 50px;
+    display: inline-block;
+    font-size: 42px;
+}
+
+span{
+    font-weight: bold;
+    font-style: normal;
+    color: #25CCF7;
+
+}
+
+#img_reservar1{
+    background-image: url("../img/reservando2.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 70%;
+    height: 600px;
+    position:absolute; z-index:1;
+    background-attachment: scroll;
+    float: left;
+}
+
+#mensaje1, #mensaje2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: right;
+    font-size: 30px;
+}
+
+.txt{
+    position:absolute; z-index:0;
+    color: #6F1E51;
+    transform: translateY(-50%);
+    top:50%;
+    font-size: 50px;
+    width: 400px;
+    text-align: right;
+}
+
+img{
+    margin-top: 120px;
+    margin-right: 50px;
+    width: 300px;
+    height: 300px;
+    float: right;
 }
